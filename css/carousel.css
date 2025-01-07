@@ -1,0 +1,50 @@
+.carousel {
+    height:auto;
+    display: inline-block;
+}
+
+.carousel-itself {
+    background-color: rgb(82, 82, 82);
+    height: 4in;
+    width: 8in;
+}
+
+.carousel-itself img, .carousel-itself iframe {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.carousel-item, .carousel-item-hidden {
+    display: none;
+}
+
+.carousel-item-visible {
+    display: inline;
+}
+
+.carousel-controls {
+    background-color: gray;
+
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#carousel-button-prev {
+    margin-left: 20px;
+}
+
+#carousel-button-next {
+    margin-right: 20px;
+}
+
+#slide-counter {
+    display: flex;
+    align-items: center;
+}
+
+input{
+    height: 0%;
+    width: 30px;
+}

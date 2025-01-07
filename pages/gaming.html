@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kyle Robertson's Website</title>
+    <meta charset="UTF-8">
+    <meta name="Gaming" content="This is a collection of gaming clips and screenshots.">
+
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/gaming.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <script src="../js/layout.js" type="module"></script>
+    <script src="../js/carousel.js" type="module"></script>
+</head>
+
+<body>
+<page-base>
+    <left-pane slot="left-pane">
+        <left-nav slot="content">
+            <ul slot="page-anchor-links" style="list-style-type: none;">
+                <li><a href="#splatoon">Splatoon</a></li>
+            </ul>
+        </left-nav>
+    </left-pane>
+
+    <right-pane slot="right-pane">
+        <div slot="content">
+            <h1>Gaming</h1>
+            <p>This page is dedicated to clips from the various games
+            I play.</p>
+
+            <h2 id="splatoon">Splatoon</h2>
+            <carousel->
+                <div slot="carousel-itself" class="carousel-itself">
+                    <iframe class="carousel-item carousel-item-visible" width="560" height="315" src="https://www.youtube.com/embed/j_mSvTXlbhI?si=Pug7UvfLK4PwoiSn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="carousel-item" width="560" height="315" src="https://www.youtube.com/embed/R-6BVL0VZxo?si=9zKWE3oNNfzP0Vct" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="carousel-item" width="560" height="315" src="https://www.youtube.com/embed/wejMAbSiBEk?si=-OU4chXZvfTn-gI9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </carousel->
+            <div style="display: flex">
+
+                <p>See more:</p>
+                <a href="https://youtube.com/playlist?list=PLT_qWScTGmIlvG5etnc2bw1ZX6ODjNhu6&si=LmVAnq7xp7aB3eKm">Playlist</a>
+            </div>
+
+        </div>
+
+        <h2></h2>
+    </right-pane>
+</page-base>
+</body>
+
+</html>
