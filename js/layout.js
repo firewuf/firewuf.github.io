@@ -53,16 +53,14 @@ class LeftNav extends HTMLElement {
         nav.innerHTML = `
 <h1>firewuf.io</h1>
 <ul style="list-style-type: none;">
-<li><a href="../index.html">Home</a></li>
-<li><a href="../pages/gaming.html">Gaming</a></li>
-<li><a href="../pages/projects.html">Projects</a></li>
-<li><a href="../pages/blog.html">Blog</a></li>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../pages/gaming.html">Gaming</a></li>
+    <li><a href="../pages/projects.html">Projects</a></li>
+    <li><a href="../pages/blog.html">Blog</a></li>
 </ul>
 
 <h3>On this page</h3>
-<ol type="1">
-<slot name="page-anchor-links">Warning: no anchor links</slot>
-</ol>`;
+<slot name="page-anchor-links">Warning: no anchor links</slot>`;
         shadow.append(nav);
     }
 }

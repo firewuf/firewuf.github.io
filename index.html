@@ -15,17 +15,19 @@
     <page-base>
         <left-pane slot="left-pane">
             <left-nav slot="content">
-                <div slot="page-anchor-links">
-                    <li>About me</li>
+                <ul slot="page-anchor-links" style="list-style-type: none;">
+                    <li><a href="#about-me">About me</a></li>
 
-                    <li>Contact</li>
-                </div>
+                    <li><a href="#resume">Résumé</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </left-nav>
         </left-pane>
 
         <right-pane slot="right-pane">
             <div slot="content">
-                <h1>About me</h1>
+                <h1 id="about-me">About me</h1>
                 <p>I'm Kyle Robertson, a Software Engineer. I know
                     Python, Java, JS, HTML, CSS, C, and C++. I'm a big fan
                     of open source projects and the philosophy behind it.
@@ -38,7 +40,11 @@
                     and I'm a big fan of arcade-style video games
                     like Mario, Sonic, and Splatoon.
                 </p>
-                <h1>Contact</h1>
+
+                <h1 id="resume">Résumé</h1>
+                <a href="resources/KyleRobertsonResume.pdf">PDF</a>
+
+                <h1 id="contact">Contact</h1>
                 <table class="basic-table">
                     <tr>
                         <th>Email</th>
