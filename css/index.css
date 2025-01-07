@@ -1,0 +1,11 @@
+.flex-container {
+    display: flex;
+}
+
+.greater {
+    flex: 3;
+}
+
+.lesser {
+    flex: 1;
+}

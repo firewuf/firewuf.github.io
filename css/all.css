@@ -1,0 +1,17 @@
+* {
+    font-family: "Liberation Sans", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*Debug
+body {
+    background-color: blueviolet;
+}
+*/
+
+.basic-table, .basic-table th, .basic-table td {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+}
