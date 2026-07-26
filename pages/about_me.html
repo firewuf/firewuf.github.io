@@ -2,47 +2,38 @@
 <html lang="en">
 
 <head>
-    <title>Home - Kyle's Website</title>
+    <title>About Me - Kyle's Website</title>
     <link rel="stylesheet" href="/styles/universal.css">
     <link rel="stylesheet" href="/styles/about_me.css">
+    <script type="text/javascript" src="/scripts/universal.js"></script>
 </head>
 
 <body>
-<div id="nav_header">
-    <h1>
-        Kyle's Website
-    </h1>
+    <nav-header></nav-header>
 
-    <a href="home.html"><h4>Home</h4></a>
-    <a href="about_me.html"><h4>About Me</h4></a>
-    <a href="photography.html"><h4>Photography</h4></a>
-</div>
-
-<div id="body_content">
-    <div>
-        <h2>Resume</h2>
-        <div id="resume_stuff">
-            <p>Check out my resume here: </p>
-            <a href="/resources/kyle_robertson_resume.pdf">View Resume</a>
+    <div id="body_content">
+        <div>
+            <h2>Resume</h2>
+            <div id="resume_stuff">
+                <p>Check out my resume here: </p>
+                <a href="/resources/kyle_robertson_resume.pdf">View Resume</a>
+            </div>
         </div>
+
+        <table id="pic_table">
+            <tr>
+                <td id="element_tl"><img id="pic_1" src="/resources/about_me/pic_1.jpeg" alt="A picture of Kyle looking at a wall video games in Japan."></td>
+                <td id="element_tr" colspan="2"><img id="pic_2" src="/resources/about_me/pic_2.jpeg" alt="A picture of Kyle sitting on a bolder while hiking up Mt. Saint Helens."></td>
+            </tr>
+            <tr>
+                <td id="element_br" colspan="2"><img id="pic_4" src="/resources/about_me/pic_4.jpg" alt="A picture of Kyle with his dad and dog Jack riding in a truck."></td>
+                <td id="element_bl"><img id="pic_3" src="/resources/about_me/pic_3.jpeg" alt="A picture of Kyle in the foreground hiking up Mt. Saint Helens with
+                    a field of rocks in the background."></td>
+            </tr>
+        </table>
     </div>
 
-    <table id="pic_table">
-        <tr>
-            <td id="element_tl"><img id="pic_1" src="/resources/about_me/pic_1.jpeg" alt="A picture of Kyle looking at a wall video games in Japan."></td>
-            <td id="element_tr" colspan="2"><img id="pic_2" src="/resources/about_me/pic_2.jpeg" alt="A picture of Kyle sitting on a bolder while hiking up Mt. Saint Helens."></td>
-        </tr>
-        <tr>
-            <td id="element_br" colspan="2"><img id="pic_4" src="/resources/about_me/pic_4.jpg" alt="A picture of Kyle with his dad and dog Jack riding in a truck."></td>
-            <td id="element_bl"><img id="pic_3" src="/resources/about_me/pic_3.jpeg" alt="A picture of Kyle in the foreground hiking up Mt. Saint Helens with
-                a field of rocks in the background."></td>
-        </tr>
-    </table>
-</div>
-
-<div id="nav_footer">
-    <h6>About Me - Kyle's Website</h6>
-</div>
+    <nav-footer>About Me</nav-footer>
 </body>
 
 </html>
