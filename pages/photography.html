@@ -6,73 +6,37 @@
     <link rel="stylesheet" href="/styles/universal.css">
     <link rel="stylesheet" href="/styles/about_me.css">
     <script type="text/javascript" src="/scripts/universal.js"></script>
+    <script type="text/javascript" src="/scripts/photography.js"></script>
 </head>
 
 <body>
 <nav-header></nav-header>
 
 <div id="body_content">
-    <table>
-        <tr>
-            <td><img src="/resources/photography/pic_1.jpg"></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_2.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_3.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_4.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_5.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_6.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_7.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_8.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_9.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_10.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_11.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_12.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_13.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_14.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_15.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_16.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_17.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_18.jpg"></td>
-        </tr>
-        <tr>
-            <td><img src="/resources/photography/pic_19.jpg"></td>
-        </tr>
+    <memory-gallery id="pic_showcase"></memory-gallery>
 
-    </table>
+    <script>
+        document.getElementById("pic_showcase").addMemory(["/resources/photography/pic_1.jpg",
+            "/resources/photography/pic_2.jpg",
+            "/resources/photography/pic_3.jpg",
+            "/resources/photography/pic_4.jpg",
+            "/resources/photography/pic_5.jpg",
+            "/resources/photography/pic_6.jpg",
+            "/resources/photography/pic_7.jpg",
+            "/resources/photography/pic_8.jpg",
+            "/resources/photography/pic_9.jpg",
+            "/resources/photography/pic_10.jpg",
+            "/resources/photography/pic_11.jpg",
+            "/resources/photography/pic_12.jpg",
+            "/resources/photography/pic_13.jpg",
+            "/resources/photography/pic_14.jpg",
+            "/resources/photography/pic_16.jpg",
+            "/resources/photography/pic_17.jpg",
+            "/resources/photography/pic_18.jpg",
+            "/resources/photography/pic_19.jpg",
+            "/resources/photography/pic_20.jpg"])
+        document.getElementById("pic_showcase").addDescription(1, "a very sus pic")
+    </script>
 </div>
 
 <nav-footer>Photography</nav-footer>
