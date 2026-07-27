@@ -10,16 +10,16 @@
 }
 
 * {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
 }
 
 body {
-    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(20, 20, 56, 1) 35%, rgba(2, 0, 36, 1) 100%);
-    color: lightgray;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(214, 214, 255, 1) 100%);
+    color: black;
 }
 
 a {
-    color: #7932c9;
+    color: #0c6ec4;
 }
 
 #nav_header {
@@ -29,5 +29,4 @@ a {
     justify-content: flex-start;
     column-gap: 20px;
     backdrop-filter: blur(10px);
-    font-family: Roboto, sans-serif;
 }
