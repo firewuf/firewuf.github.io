@@ -14,8 +14,9 @@
 }
 
 body {
-    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(214, 214, 255, 1) 100%);
     color: black;
+    margin: 0;
+    border: 0;
 }
 
 a {
@@ -31,7 +32,7 @@ table {
     margin: 0 auto;
 }
 
-#nav_header {
+#nh_content {
     display: flex;
     flex-direction: row;
     align-items: center;
