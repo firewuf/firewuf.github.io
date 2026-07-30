@@ -17,6 +17,7 @@ body {
     color: black;
     margin: 0;
     border: 0;
+    background-color: black;
 }
 
 a {
@@ -32,11 +33,35 @@ table {
     margin: 0 auto;
 }
 
+#nav_header {
+    position: relative;
+    color: black;
+}
+
 #nh_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    anchor-name: --nh_content;
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     column-gap: 20px;
     backdrop-filter: blur(10px);
+}
+
+#nh_background {
+    width: 100%;
+    height: 100%;
+}
+
+#nh_welcome_message {
+    position: absolute;
+    top: calc(anchor(--nh_content bottom) + 100px);
+    left: 100px;
+    backdrop-filter: blur(10px);
+    max-width: 500px;
 }

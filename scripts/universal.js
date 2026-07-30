@@ -5,22 +5,6 @@ class NavHeader extends HTMLElement {
         const shadow = this.attachShadow({mode: "open"})
         shadow.innerHTML = `
             <link rel="stylesheet" href="/styles/universal.css">
-            <style>
-                #nav_header {
-                    position: relative; 
-                }
-                #nh_content {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%; 
-                }
-                
-                #nh_background {
-                    width: 100%;
-                    height: 100%;
-                }
-            </style>
 
             <div id="nav_header">
                 <img id="nh_background">
@@ -34,12 +18,20 @@ class NavHeader extends HTMLElement {
                     <a href="/pages/about_me.html"><h4>About Me</h4></a>
                     <a href="/pages/photography.html"><h4>Photography</h4></a>
                 </div>
+                
+                <div id="nh_welcome_message"></div>
             </div>
         `
     }
 
     setBackground(img) {
         this.shadowRoot.getElementById("nh_background").setAttribute("src", img)
+    }
+
+    setWelcomeMessage(msg) {
+        this.shadowRoot.getElementById("nh_welcome_message").innerHTML = `
+            <p>${msg}</p>
+        `
     }
 }
 customElements.define("nav-header", NavHeader)
