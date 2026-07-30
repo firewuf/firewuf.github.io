@@ -5,6 +5,13 @@
     column-gap: 20px;
 }
 
+#contact_info_table {
+    th, td {
+        border: 1px solid;
+    }
+    border-collapse: collapse;
+}
+
 #element_tl {
     text-align: center;
     vertical-align: center;
