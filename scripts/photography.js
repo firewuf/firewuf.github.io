@@ -1,5 +1,3 @@
-const Directions = Object.freeze({LEFT: "left", RIGHT: "right"})
-
 class MemoryGallery extends HTMLElement {
     picNum = 1
 
@@ -65,7 +63,6 @@ class MemoryGallery extends HTMLElement {
         for(let p of listOfPics){
             this.shadowRoot.getElementById("mem_gal_table").innerHTML +=
                 (this.picNum % 2 === 1) ? this.insertMemLeft(p) : this.insertMemRight(p)
-
         }
     }
 

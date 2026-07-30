@@ -1,3 +1,7 @@
+tr {
+    outline: 1px solid white;
+}
+
 #mem_gal_table {
     border-spacing: 30px;
 }
