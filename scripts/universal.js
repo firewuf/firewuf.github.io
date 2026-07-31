@@ -17,6 +17,7 @@ class NavHeader extends HTMLElement {
                     <a href="/pages/home.html"><h4>Home</h4></a>
                     <a href="/pages/about_me.html"><h4>About Me</h4></a>
                     <a href="/pages/photography.html"><h4>Photography</h4></a>
+                    <a href="/resources/kyle_robertson_resume.pdf"><h4>Resume</h4></a>
                 </div>
                 
                 <div id="nh_welcome_message"></div>
