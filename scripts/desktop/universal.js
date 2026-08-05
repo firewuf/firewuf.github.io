@@ -7,8 +7,6 @@ class NavHeader extends HTMLElement {
             <link rel="stylesheet" href="/styles/desktop/universal.css">
 
             <div id="nav_header">
-                <img id="nh_background">
-            
                 <div id="nh_content">
                     <h1>
                         Kyle's Website
@@ -23,10 +21,6 @@ class NavHeader extends HTMLElement {
                 <div id="nh_welcome_message"></div>
             </div>
         `
-    }
-
-    setBackground(img) {
-        this.shadowRoot.getElementById("nh_background").setAttribute("src", img)
     }
 
     setWelcomeMessage(msg) {
