@@ -4,11 +4,13 @@
 <head>
     <title>Home - Kyle's Website</title>
 
-    <meta http-equiv="refresh" content="0; /pages/home.html"/>
 </head>
 
 <body>
-
+    <script>
+        window.location.href = (window.innerWidth > 500) ?
+             "/pages/desktop/home.html" : "/pages/mobile/home.html"
+    </script>
 </body>
 
 </html>
