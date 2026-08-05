@@ -4,7 +4,7 @@ class NavHeader extends HTMLElement {
 
         const shadow = this.attachShadow({mode: "open"})
         shadow.innerHTML = `
-            <link rel="stylesheet" href="/styles/universal.css">
+            <link rel="stylesheet" href="/styles/desktop/universal.css">
 
             <div id="nav_header">
                 <img id="nh_background">
@@ -14,9 +14,9 @@ class NavHeader extends HTMLElement {
                         Kyle's Website
                     </h1>
             
-                    <a href="/pages/home.html"><h4>Home</h4></a>
-                    <a href="/pages/about_me.html"><h4>About Me</h4></a>
-                    <a href="/pages/photography.html"><h4>Photography</h4></a>
+                    <a href="/pages/desktop/home.html"><h4>Home</h4></a>
+                    <a href="/pages/desktop/about_me.html"><h4>About Me</h4></a>
+                    <a href="/pages/desktop/photography.html"><h4>Photography</h4></a>
                     <a href="/resources/kyle_robertson_resume.pdf"><h4>Resume</h4></a>
                 </div>
                 
@@ -43,7 +43,7 @@ class NavFooter extends HTMLElement {
 
         const shadow = this.attachShadow({mode: "open"})
         shadow.innerHTML = `
-            <link rel="stylesheet" href="/styles/universal.css">
+            <link rel="stylesheet" href="/styles/desktop/universal.css">
             
             <div id="nav_footer">
                 <h6><slot></slot> - Kyle's Website</h6>

@@ -50,8 +50,8 @@ class MemoryGallery extends HTMLElement {
 
         const shadow = this.attachShadow({mode: "open"})
         shadow.innerHTML = `
-            <link rel="stylesheet" href="/styles/universal.css">
-            <link rel="stylesheet" href="/styles/photography.css">
+            <link rel="stylesheet" href="/styles/desktop/universal.css">
+            <link rel="stylesheet" href="/styles/desktop/photography.css">
             
             <table id="mem_gal_table">
                 
