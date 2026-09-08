@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Photography - Kyle's Website</title>
+    <link rel="stylesheet" href="/styles/desktop/universal.css">
+    <link rel="stylesheet" href="/styles/desktop/photography.css">
+    <script type="text/javascript" src="/scripts/desktop/universal.js"></script>
+    <script type="text/javascript" src="/scripts/desktop/photography.js"></script>
+</head>
+
+<body>
+<script>
+    window.location.href = (window.innerWidth > 1000) ?
+        "/pages/desktop/photography.html" : window.location.href
+</script>
+
+    <nav-header id="nav_header"></nav-header>
+    <script>
+        document.getElementById("nav_header").setBackground("/resources/photography/header_pic.jpg")
+        document.getElementById("nav_header").setWelcomeMessage("Have a look at photos I have taken below.")
+    </script>
+
+    <div id="body_content">
+        <memory-gallery id="pic_showcase"></memory-gallery>
+        <script>
+            document.getElementById("pic_showcase").addMemory(["/resources/photography/pic_1.jpg",
+                "/resources/photography/pic_2.jpg",
+                "/resources/photography/pic_3.jpg",
+                "/resources/photography/pic_4.jpg",
+                "/resources/photography/pic_5.jpg",
+                "/resources/photography/pic_6.jpg",
+                "/resources/photography/pic_7.jpg",
+                "/resources/photography/pic_8.jpg",
+                "/resources/photography/pic_9.jpg",
+                "/resources/photography/pic_10.jpg",
+                "/resources/photography/pic_11.jpg",
+                "/resources/photography/pic_12.jpg",
+                "/resources/photography/pic_13.jpg",
+                "/resources/photography/pic_14.jpg",
+                "/resources/photography/pic_16.jpg",
+                "/resources/photography/pic_17.jpg",
+                "/resources/photography/pic_18.jpg",
+                "/resources/photography/pic_19.jpg",
+                "/resources/photography/pic_20.jpg"])
+        </script>
+    </div>
+
+    <nav-footer>Photography</nav-footer>
+</body>
+
+</html>
