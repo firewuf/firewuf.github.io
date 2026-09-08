@@ -9,15 +9,18 @@
 </head>
 
 <body>
-    <script>
-        window.location.href = (window.innerWidth > 1000) ?
-            window.location.href : "/pages/mobile/about_me.html"
-    </script>
+<script>
+    if (window.innerWidth <= 1000) {
+        window.location.replace("/pages/mobile/about_me.html");
+    }
+</script>
 
     <nav-header id="nav_header"></nav-header>
-    <script>
-        document.getElementById("nav_header").setWelcomeMessage("Check out my contact info and resume below.")
-    </script>
+<script>
+    if (window.innerWidth <= 1000) {
+        window.location.replace("/pages/mobile/about_me.html");
+    }
+</script>
 
     <div class="body_text_content">
         <h2>Resume</h2>

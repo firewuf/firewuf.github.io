@@ -7,10 +7,13 @@
 </head>
 
 <body>
-    <script>
-        window.location.href = (window.innerWidth > 700) ?
-             "/pages/desktop/home.html" : "/pages/mobile/home.html"
-    </script>
+<script>
+    if (window.innerWidth <= 1000) {
+        window.location.replace("/pages/desktop/home.html");
+    } else {
+        window.location.replace("/pages/mobile/home.html");
+    }
+</script>
 </body>
 
 </html>
