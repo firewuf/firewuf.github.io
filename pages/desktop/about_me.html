@@ -9,9 +9,13 @@
 </head>
 
 <body>
+    <script>
+        window.location.href = (window.innerWidth > 1000) ?
+            window.location.href : "/pages/mobile/about_me.html"
+    </script>
+
     <nav-header id="nav_header"></nav-header>
     <script>
-        document.getElementById("nav_header").setBackground("/resources/about_me/header_pic.jpeg")
         document.getElementById("nav_header").setWelcomeMessage("Check out my contact info and resume below.")
     </script>
 

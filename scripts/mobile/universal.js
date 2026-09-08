@@ -6,6 +6,11 @@ class NavHeader extends HTMLElement {
         shadow.innerHTML = `
             <link rel="stylesheet" href="/styles/mobile/universal.css">
 
+            <script>
+            window.location.href = (window.innerWidth > 1000) ?
+            "/pages/desktop/home.html" : "/pages/mobile/home.html"
+            </script>
+
             <div id="nav_header">
                 <div id="nh_content">
                     <h1>
@@ -29,6 +34,7 @@ class NavHeader extends HTMLElement {
         `
     }
 }
+
 customElements.define("nav-header", NavHeader)
 
 class NavFooter extends HTMLElement {
@@ -45,4 +51,5 @@ class NavFooter extends HTMLElement {
         `
     }
 }
+
 customElements.define("nav-footer", NavFooter)
