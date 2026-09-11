@@ -24,7 +24,12 @@ a {
     color: #0c6ec4;
 }
 
-.body_text_content {
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.page_content {
     width: 85%;
     margin: 0 auto;
 }
@@ -41,5 +46,9 @@ a {
 #nh_welcome_message {
     backdrop-filter: blur(10px);
     justify-content: center;
+    text-align: center;
+}
+
+#nav_footer {
     text-align: center;
 }

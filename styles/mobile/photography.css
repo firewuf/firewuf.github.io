@@ -1,12 +1,8 @@
-tr {
-    outline: 1px solid white;
-}
-
 #mem_gal_table {
     border-spacing: 30px;
 }
 
-.mem_pic {
-    max-width: 100%;
-    max-height: 100%;
+.mem_pic_container {
+    text-align: center;
+    vertical-align: center;
 }

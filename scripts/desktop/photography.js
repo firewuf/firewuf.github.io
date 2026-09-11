@@ -2,8 +2,6 @@ class MemoryGallery extends HTMLElement {
     picNum = 1
 
     insertMemLeft(pic) {
-        let pn = this.picNum++
-
         return `
             <style>
                 #element_${pn}-l {
@@ -24,8 +22,6 @@ class MemoryGallery extends HTMLElement {
     }
 
     insertMemRight(pic) {
-        let pn = this.picNum++
-
         return `
             <style>
                 #element_${pn}-l {
@@ -60,6 +56,8 @@ class MemoryGallery extends HTMLElement {
     }
 
     addMemory(listOfPics) {
+        let pn = this.picNum++
+
         for(let p of listOfPics){
             this.shadowRoot.getElementById("mem_gal_table").innerHTML +=
                 (this.picNum % 2 === 1) ? this.insertMemLeft(p) : this.insertMemRight(p)
