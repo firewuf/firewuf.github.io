@@ -2,6 +2,8 @@ class MemoryGallery extends HTMLElement {
     picNum = 1
 
     insertMemLeft(pic) {
+        let pn = this.picNum++
+
         return `
             <style>
                 #element_${pn}-l {
@@ -22,6 +24,8 @@ class MemoryGallery extends HTMLElement {
     }
 
     insertMemRight(pic) {
+        let pn = this.picNum++
+
         return `
             <style>
                 #element_${pn}-l {

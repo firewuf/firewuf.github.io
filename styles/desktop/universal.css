@@ -22,7 +22,7 @@ body {
 }
 
 a {
-    color: #0c6ec4;
+    color: #7917d4;
 }
 
 .body_text_content {
@@ -31,15 +31,9 @@ a {
 }
 
 #nh_content {
-    background-image: url("/resources/home/header_pic.jpg");
+    background-color: #172dd4;
     display: flex;
     flex-direction: row;
     column-gap: 20px;
     align-items: center;
-}
-
-#nh_welcome_message {
-    backdrop-filter: blur(10px);
-    justify-content: center;
-    text-align: center;
 }
