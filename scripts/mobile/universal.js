@@ -6,11 +6,6 @@ class NavHeader extends HTMLElement {
         shadow.innerHTML = `
             <link rel="stylesheet" href="/styles/mobile/universal.css">
 
-            <script>
-            window.location.href = (window.innerWidth > 1000) ?
-            "/pages/desktop/home.html" : "/pages/mobile/home.html"
-            </script>
-
             <div id="nav_header">
                 <div id="nh_content">
                     <h1>
@@ -22,15 +17,7 @@ class NavHeader extends HTMLElement {
                     <a href="/pages/desktop/photography.html"><h4>Photography</h4></a>
                     <a href="/resources/kyle_robertson_resume.pdf"><h4>Resume</h4></a>
                 </div>
-                
-                <div id="nh_welcome_message"></div>
             </div>
-        `
-    }
-
-    setWelcomeMessage(msg) {
-        this.shadowRoot.getElementById("nh_welcome_message").innerHTML = `
-            <p>${msg}</p>
         `
     }
 }
